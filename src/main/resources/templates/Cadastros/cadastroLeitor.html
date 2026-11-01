@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" th:href="@{/Logo.png}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style4.css}">
+    <title>Biblioteca Luiz Brasil - Garanhuns</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="formulario">
+            <div class="envelope">
+                <form action="#">
+                    <div class="titulo">
+                        <h1>CADASTRA-SE</h1>
+                    </div>
+                            
+                    <div class="agrupamento">
+    
+                        <div class="input-box">
+                            <input id="nome" type="text" name="nome" placeholder="Nome Completo" required>
+                        </div>
+                        <div class="input-box">
+                            <input id="email" type="email" name="email" placeholder="E-mail" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <input id="cpf" type="text" name="cpf" placeholder="CPF" required>
+                        </div>
+                        <div class="input-box">
+                            <input id="rg" type="text" name="rg" placeholder="RG" required>
+                        </div>
+                        <div class="input-box">
+                            <input id="telefone" type="tel"name="telefone" placeholder="Telefone" required>
+                        </div>
+                        <div class="input-box">
+                            <input id="endereço" type="text" name="endereço" placeholder="Endereço" required>
+                        </div>
+                        <div class="input-box">
+                            <input id="password" type="password" name="password" placeholder="Senha" required>
+                        </div>
+                        <div class="input-box">
+                            <input id="password" type="password" name="password" placeholder="Confirmar Senha" required>
+                        </div>
+                    </div>
+    
+                    <div class="botao_confirmar">
+                        <button><a href="#">CONFIRMAR</a></button>
+                    </div>
+                    <div class="botao_voltar">
+                        <button><a href="/autenticacao/opLogin">VOLTAR PARA O LOGIN</a></button>
+                  </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="imagem">
+            <img src="@{/Logo.png}" width="560" height="520">
+        </div>
+
+    </div>
+</body>
+</html>
