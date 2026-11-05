@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" th:href="@{/Logo.png}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Biblioteca Luiz Brasil - Garanhuns</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="imagem">
+           <img th:src="@{/Logo.png}" width="400" height="380">
+            <div class="nomes">
+                    <h1>BIBLIOTECA</h1>
+                    <h2>Luiz Brasil</h2>
+            </div>
+        </div>
+
+        <div class="escolha">
+                <div class="titulo">
+                    <h1>LOGIN</h1>
+                    <h3>BEM-VINDO DE VOLTA!</h3>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="img">
+                                <img class= "img1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAD3UlEQVR4nO2dS4scZRSGy4UmQnQXGVFcKFEUDEhABf0ZURP8AeI2W1FwoxCyVjOJSzci5hcYNAsjQcTLrDqBhq7vfau+7gleEpOZaCw5pkZGECY901XndPf7wIFmpnrqe8/57rcpCiGEEEIIIYQQQgghgrG+vv4ggOMkzwC4BGAM4FZr9vkSydWU0rHJZPKAd3oXhpTSkyQ/Jvk7yeYuzZ49W5blIe/0zy2j0eh+AKcA/DGF4/9jbek4ORwO93vrmSvKsjwE4KfdOv5/AnFxPB4/7K1rLkgpPWd1+qycv83KsiwPe+ubh5w/7sD5/wYh57zirTMkw+FwP8nvO3T+ln1r7Yu33nAAONWD87fahHe99YbramIPvZ1dBOCaqqJt8E4/vxfnbwvCB35ZLtgIl9MNsmYVgOsaMRf/1P3H+3b+lqWUXiuWHZJnvAJA8nSx7ODOJJpLAGyEXCw7JCeOAcjFskNy07EK2iiWHSoA7gGYqApyBGqEfSG56lgCPiqWnZTSMa8AVFX1SrHs5JwP2LSAQ+6/bu/21h8CkmcdSsCqt+5oK2G3enT+Zl3Xj3vrDgWAkz0G4H1vvSGXJAFc7MH5Xw8Gg33eekOSc14hOerQ+RiNRo946wxNWZaHbfdCB84f1XX9rLe+uYDkQQBfzbLa0RrwlAwGg322e2GPYwSbaX1Pdf4eyDmv2AL6NIFonz2truYMyTkfsDVcm78B8I0tprQ5fNM+tz/7sKqqVzXCFUIIIYQQQgghhBBi+pMzR9p9Q++Q/ATAeTvlCOBKe5x1w6y9K+JK+7sv7Fn7TvvdIzoJswNN09xbVdULJE+QPGdLh10sR7Z/+4S9y965tCWiaZp7qqp6vl1wOe9xRszeae+2NFhaLE3FImMCAbxsc/aAZcbeHb5jCWnT9tJCBaOqqodIvkXycgAnN3dpl9s0HyzmFZLPtOd/bwZwaLNLu9lum3y6mBcAPGbrsQD+DODAZhYG4DaAT3POTxRRWVtbu6/tLm5EcBq7MdP2drgelG2mmuUFSwxuAH4Ms8nLDjl47O+nfxCukTzq6nySbwL4y9sZ9AuCaX/DxfkAXrfGydsJ9A/CbZvy8LhK8oa3eMaxG71ekUnyQgDRTSQD8GUvzrehurdYBrW6rl9c9OtlmuDW/fU3JH8IILQJat91HgAAvwQQ2gS1nzsPQACRTWRTAKgAuOdCqgT4O4KqgvydQQdTG8AFDwCA37xFMqhZF72PEvC5t1AGNQCfdR6AlNJTJK96i2U8u9rbjGhZlo/aIjWAXwMIbzzNfGA5X/+xSQghhBBCCCGEEEIUO/A3BBk9bYMlNHIAAAAASUVORK5CYII=">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="img">
+                                <img class="img2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAE8klEQVR4nO2cy49URRTGS4kaGWOiBnBlWKjxFTdqokE3muheDGzQhYKi+PoHhkzYaIgGgYzCxrhgoTuXbnwk+AgLBJQYHBUzt+v7qhsmLNQRMNEyR2qSiRn61u37qNt9zy+ppHP7dnWdc+rU81QZoyiKoiiKoiiKoiiKoigtYzAYXGet3UzyIIAjAM4A+CukM+HZAefcJufcVOryTgzOubUk9wP4naSPSeHdffLb1OUfW06ePHk1yZ1FFL+CIX4jOS15pZZnrLDW3gTg81EVv0L6st/vr0st11hA8k4Av1ao/CVvOC15p5ZvHGr+z1Urf5kRxLBrUsvZSrz3V1Xc7FwuHdY+YQVI7mxA+UuesKv5KtZi+v3+ujBiiVHgtwBelvZcxvuSQr8hz45F5nHBObc+tdytgeT+CKWdt9Y+672/4nL5eO+vBLBV3o3wgneblbLFM1zkj/X/BLAhNk8AD+cZQTxOZ8zmv5HP5rzaKjW/qGEBbIvwqqdM1yF5MK/Nl6alaL7yG5LHc7zgPdN1ABwZpiTn3I4Seb+aY9yvTdcheTanlt5RIu+7cvIemK5D8uIwJUknPWre8tu84ajpOqzRAAsLC9erAUo2QSyxgKZNUAWdMIBXRjUAgNe1E85X0oEcJR0rMQw9obPhHJxzmyKWDbYWNQDJ5yMmYhtN13HOTUUsRZyX5YXYPAE8ErMUAWB1vdKNCST3RdRWMcK2Yc1RaHZeiFyMm21WyhbjnFtbYDn6uMxwnXN3i/fIMFU+h1nv0Db/f8a8JbXcrYLkdKTySicAM6nlbR1etyTTY3VTPj28tL14uoZm55cyC3td9ITPKjTAYQ1THK1P2CUrliUUL6OdGcmrnqrSAZxz62UDvcAwdWmSNatDzWoNMSV7uMEY38hmSljKviifw7NZWV7QGa6iKIqiKIqiKIqiKIqiFIDkGgkvkZggALtJfgzgC5JHZXMlhDReCOlseHY0vCPv7gbwXAhR0aOpwwCw2jn3qKzdh6Oq52rYjD8nmzzyH+G/uhsTJAftrLUPkXxTDknIjSdNRUQs2zOQ//yK5Bv9fv/BYYf/JoYQvzND8qemFc78lJHcKxF4E2WMwWBwc4j5mWuBkn1kkrJOj/UFH865e0geyjuAwXYnKfsh8VwzLlhrbwfwEYC/W6BAX0UKsnzY6/VuM20ly7JrQ/teJorBtzmFjntvmWNTtdDr9e4learqWodLAVqfkNxDcjuAJ0jel2XZrRLnMzc3d40k+SzP5LvwznaS78hvJY8avPGUyGzaAMktcpVABUItAvhUvMha+1iV1whIXpJnmGdIwNdiBeUVmbdUVcZRBdsB4J8SQswDeEvugWgyeCoEfW0A8LaUoYSXiuwvmRSQfHrEQlOaFJmI+RaMt5dNCveEso1ijGY9QUYDRSLVlgXHviadtWn3TY3PAPihoGx/NHYfndQYiUIrUEC5ROnJUU46piIcddpY4AKo5u6dAPB4ZK0QD3nRe7/KjCne+1Whn4vydunoay8UgA8ilP9dqyctozW530cY4X1TNxELaSfm5+dvMBNGlmU3SsXKkf3H2gsSMea/30woJB/IkX2xiUIMdUMz4TC1/MkLkJjk8hcZH3cxGTUA1QCpayHVA9IrgtoEpVcGEyTtA6gGSF4LqR6QXhGc1CZIURRFURRFURRFURRFMePKv3aY2lQNPGjGAAAAAElFTkSuQmCC">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <div class="botão">
+                                <button ><a href="/autenticacao/loginAdm">ADMNISTRADOR</a></button>
+                            </div> 
+                        </td>
+                        <td>
+                            <div class="botão">
+                                <button><a href="/autenticacao/loginLeitor">LEITOR</a></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+                <div class="cadastre-se">
+                    <h3>Ainda não possui login?</h3>
+                    <button><a href="/autenticacao/opCadastro"><u>CADASTRE-SE</u></a></button>
+                </div>
+        </div>
+       
+    </div>
+</body>
+</html>

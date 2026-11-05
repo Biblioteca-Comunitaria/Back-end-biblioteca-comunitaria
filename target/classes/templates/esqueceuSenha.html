@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" th:href="@{/Logo.png}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style6.css}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Biblioteca Luiz Brasil - Garanhuns</title>
+</head>
+<body>
+        <div class="lado">
+            <img src="@{/Logo.png}" width="170" height="150">
+            <div class="linha-vertical"></div>
+        </div>
+        
+        <div class="formulario">
+            <form action="#">
+                <div class="titulo">
+                    <h1>Mudança de Senha</h1>
+                </div>
+                        
+                <div class="agrupamento">
+
+                    <div class="input-box">
+                        <input id="password" type="password" name="password" placeholder="SENHA" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input id="password" type="password" name="password" placeholder="CONFIRMAR SENHA" required>
+                    </div>
+                </div>
+
+                <div class="instrucoes">
+                    <li>INSTRUÇÕES</li>
+                    <li>Ter no máximo 6 caracteres</li>
+                    <li>Incluir letra maiúscula</li>
+                    <li>Incluir número</li>
+                    <li>Incluir caractere especial</li>
+                </div>
+
+                <div class="botao_confirmar">
+                    <button><a href=""><u>CONFIRMAR</u></a></button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
